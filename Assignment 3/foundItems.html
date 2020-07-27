@@ -1,9 +1,12 @@
 <div class="container">
     <ul>
       <li ng-repeat="item in items">
-        {{ item.name }} , {{ item.short_name }} , {{ item.description }}
-        <button ng-click="onRemove({index: $index});">Don't want this one!</button>
+        <span class="col-lg-4">{{ item.name }}</span>
+        <span class="col-lg-4">{{ item.short_name }}</span>
+        <span class="col-lg-4">{{ item.description }}<br>
+        <button  class="btn btn-primary" ng-click="onRemove({index: $index});">Don't want this one!</button></span>
+
       </li>
     </ul>
-    <div ng-if="items.length === 0 || narrow.searchTerm.length === 0">Nothing is F</div>
+    <div  class="error" ng-if="items.length === 0 || narrow.searchTerm.length === 0">Nothing is Found!!</div>
 </div>

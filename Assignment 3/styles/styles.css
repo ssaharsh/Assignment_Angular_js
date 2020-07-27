@@ -25,7 +25,11 @@ input[type="text"] {
   animation: load8 1.1s infinite linear;
 }
 ul{
-  list-style: none;
+  list-style: none
+}
+.error{
+ color: red;
+ font-size: 25px;
 }
 #list{
   float: right;
