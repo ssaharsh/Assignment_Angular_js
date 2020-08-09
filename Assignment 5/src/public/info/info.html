@@ -1,0 +1,30 @@
+<div id="up" ng-if="infoCtrl.name.length === 1">
+  Not Signed up yet!!
+  <br>
+  <a ui-sref="public.sign-up">Click here to Sign Up</a>
+</div>
+
+<div class="container" ng-if="infoCtrl.name.length > 1">
+
+    <div id="info" class="col-lg-6 col-sm-6">
+      <h3 style="text-align: center:">User Info</h3><hr>
+      <span  id="info-data"><b>Name:</b>   {{infoCtrl.name}}</span>
+      <br>
+      <span  id="info-data"><b>Email: </b>    {{infoCtrl.email}}</span>
+      <br>
+      <span  id="info-data"><b>Phone: </b>    {{infoCtrl.phone}}</span>
+      <br>
+    </div>
+
+  <div id="favdish" class="col-lg-6 col-sm-6">
+    <h3 style="text-align: center:">Favourite Dish</h3><hr>
+    <img width="250" height="150"
+         ng-src="https://ssodani.herokuapp.com/images/{{infoCtrl.shortname}}.jpg">
+         <br>
+
+    <span id="info-data"><b>Title: </b>    {{infoCtrl.dishname}}</span>
+    <br>
+
+    <span id="info-data"><b>Description: </b>    {{infoCtrl.desc}}</span>
+  </div>
+</div>

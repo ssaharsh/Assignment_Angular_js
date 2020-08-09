@@ -1,0 +1,33 @@
+.ng-touched.ng-valid{
+  border: 2px green solid;
+}
+
+.ng-touched.ng-invalid{
+  border: 2px red solid;
+}
+
+legend{
+  font-weight: bold;
+  color: #557c3e;
+  font-size: 3em;
+  font-family: 'Lora', serif;
+  text-shadow: 1px 1px 1px #222;
+}
+#form{
+    text-align: center;
+    width: 50%;
+}
+input {
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn{
+  background-color: #f6b319;
+  color: #951c49;
+  border-color: #61122f;;
+}
+
+legend{
+
+}
